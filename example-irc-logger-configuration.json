@@ -4,5 +4,7 @@
   "nickname": "this_is_my_nickname",
   "name": "IRC Logger Bot",
   "channel": "#example-channel",
-  "directory": "./logs"
+  "fluentTag": "ircLogger",
+  "actionsTag": "actions",
+  "messagesTag": "messages"
 }

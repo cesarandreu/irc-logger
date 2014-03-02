@@ -3,8 +3,7 @@
 var irc = require('slate-irc'),
   net = require('net'),
   logger = require('./lib/logger.js'),
-  config = require('./irc-logger-configuration'),
-  path = require('path');
+  config = require('./irc-logger-configuration');
 
 console.log('CONNECTING TO ', config.host + ':' + config.port);
 var stream = net.connect({
@@ -27,5 +26,5 @@ client.user(config.nickname, config.name);
 console.log('JOINING CHANNEL ', config.channel);
 client.join(config.channel);
 
-console.log('LOGS WILL BE STORED TO ', path.resolve(config.directory));
+console.log('STARTING LOGGER');
 client.use(logger(config));
