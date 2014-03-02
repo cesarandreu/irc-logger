@@ -1,0 +1,24 @@
+{
+  "name": "irc-logger",
+  "version": "0.1.0",
+  "description": "Given an IRC server/channel, it will stay connected and log all messages",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node ./index.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/cesarandreu/irc-logger.git"
+  },
+  "author": "César Andreu <cesarandreu@gmail.com>",
+  "license": "MIT",
+  "dependencies": {
+    "slate-irc": "^0.4.0",
+    "winston": "^0.7.2",
+    "fs-extra": "^0.8.1"
+  },
+  "engines": {
+    "node": ">=0.10"
+  }
+}

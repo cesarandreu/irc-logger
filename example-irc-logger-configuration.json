@@ -1,0 +1,8 @@
+{
+  "host": "irc.freenode.net",
+  "port": 6667,
+  "nickname": "this_is_my_nickname",
+  "name": "IRC Logger Bot",
+  "channel": "#example-channel",
+  "directory": "./logs"
+}
